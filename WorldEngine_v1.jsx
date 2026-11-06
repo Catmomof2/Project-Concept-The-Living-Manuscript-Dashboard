@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Clock, BookOpen, Map, Users, Activity } from 'lucide-react';
+import { useState } from 'react';
+import { Clock, Users, Activity } from 'lucide-react';
 
 // Sample Lore Schema representing "Story States"
 const loreData = {
