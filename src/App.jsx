@@ -204,12 +204,12 @@ export default function App() {
   }
 
   function removeManuscript(id) {
-    if (!window.confirm('Remove this manuscript from the dashboard?')) return
+    if (!globalThis.confirm('Remove this manuscript from the dashboard?')) return
     setManuscripts((list) => list.filter((m) => m.id !== id))
   }
 
   function resetStarter() {
-    if (!window.confirm('Reset the dashboard to the starter manuscripts? Your edits will be replaced.')) return
+    if (!globalThis.confirm('Reset the dashboard to the starter manuscripts? Your edits will be replaced.')) return
     setManuscripts(SEED)
     setLog([])
   }
